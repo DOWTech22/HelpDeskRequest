@@ -1,0 +1,54 @@
+﻿@{
+
+    ViewBag.Title = "Home Page";
+    @Model; //Check this tag might not be working or not needed.
+}
+   
+<div class="jumbotron">
+    <h1>Help Desk Request:</h1>
+    <p>Please enter your name, date, and description so we can help you with the problem you are having.</p>
+</div>
+
+<body>
+    
+    
+    <h3><u>Help Desk Ticket:</u></h3><br />
+                                     <form asp-action="~/Views/" method="post" asp-controller="Form">
+
+
+                                         Name: <input type="text" id="yourName" placeholder="Enter your name..." name="yourName" />
+                                         <br /><br />
+
+                                         Date: <input type="date" id="dateTime" name="calender" />
+                                         <br /><br />
+
+                                         Technician: <input type="text" id="techName" placeholder="Enter tech name here..." name="techName" />
+                                         <br /><br />
+                                         @{var time = DateTime.Now.ToString("HH:mm:ss tt"); }
+                                         Time is: <p id="Time"> @time</p>
+
+
+
+                                         <h3><u>Description of Problem:</u></h3>
+
+                                         <div class="form-group">
+
+                                             <textarea class="form-control" name="info" id="info" wrap="soft" rows="10" cols="50"></textarea>
+                                             <br /> <input type="submit" id="process" value="Process" />
+
+
+                                         </div>
+
+
+                                         <!--This is the color for button text.-->
+                                         <style>
+                                             #process {
+                                                 color: blue;
+                                             }
+                                         </style>
+                                     </form>
+
+   
+    
+</body>
+
