@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.IO;
-using System.Linq;
-using System.Web;
+
 using System.Web.Mvc;
 
 
@@ -47,7 +45,8 @@ namespace HelpDeskRequest.Controllers
             
             //path has to be exacted.
             string fdir = @"C:\\Users\\DanWilliams\\Desktop\\test data\\HelpDeskDataList.csv";
-            //var path = new FileInfo(fdir);
+            var path = new FileInfo(fdir);
+            
 
             //TODO: have to get all input and store it to a .csv file.
             
