@@ -4,7 +4,7 @@ using System.IO;
 using System.Web.Mvc;
 
 
-// My Home controller and actions. thinking about deleting the about and contacts page.
+
 
 namespace HelpDeskRequest.Controllers
 {
@@ -47,9 +47,6 @@ namespace HelpDeskRequest.Controllers
             // (PATH) has to be exacted.
             string fdir = @"C:\\Users\\DJ\\Desktop\\HelpDeskDataList.csv";
 
-
-
-            //TODO: have to get all input and store it to a .csv file.
 
 
             // This Creates a text file using streamWriter and write to file.
